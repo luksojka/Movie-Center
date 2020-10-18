@@ -1,0 +1,26 @@
+spring.jpa.hibernate.ddl-auto: create-drop
+
+spring.mvc:
+  view:
+    prefix: /WEB-INF/views/
+    suffix: .jsp
+
+spring.jpa:
+  generate-ddl: true
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 5MB
+  datasource:
+    url: jdbc:mysql://localhost:3306/movie_center?serverTimezone=UTC
+    username: root-movie
+    password: Projectmovie
+    initialization-mode: always
+  mvc:
+    locale: pl_PL
+    locale-resolver: fixed
+
+logging:
+  level:
+    org.springframework.web: DEBUG
