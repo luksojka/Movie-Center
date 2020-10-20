@@ -5,9 +5,6 @@ spring.mvc:
     prefix: /WEB-INF/views/
     suffix: .jsp
 
-spring.jpa:
-  generate-ddl: true
-
 spring:
   servlet:
     multipart:
@@ -21,6 +18,11 @@ spring:
     locale: pl_PL
     locale-resolver: fixed
 
+spring.jpa:
+  generate-ddl: true
+
 logging:
   level:
-    org.springframework.web: DEBUG
+    org:
+      springframework.web: DEBUG
+      hibernate: ERROR
